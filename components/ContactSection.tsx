@@ -1,3 +1,4 @@
+"use client";
 export default function ContactSection() {
   return (
     <section id="contact" className="border-t border-[#43372f]/20 bg-[#f1eee5]">
