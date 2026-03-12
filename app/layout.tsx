@@ -4,6 +4,10 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 export const metadata: Metadata = {
   metadataBase: new URL("https://commercial.sjcarpentryllc.com"),
+
+  verification: {
+  google: "rHcpuQu62DpHYP-iPujSHjapdqMdA1GZRpDATlJnp8U",
+},
   title: {
     default: "SJCommercial, a division of SJCarpentry",
     template: "%s | SJCommercial",
