@@ -16,10 +16,10 @@ export default function ContactSection() {
   <a
     href="tel:6123616585"
     onClick={() => {
-      if (typeof window !== "undefined" && (window as any).gtag) {
-        (window as any).gtag("event", "phone_click", {
+      if (typeof window !== "undefined") {
+        (window as any).gtag?.("event", "phone_click", {
           event_category: "engagement",
-          event_label: "Header Phone Number",
+          event_label: "Contact Phone",
         });
       }
     }}
