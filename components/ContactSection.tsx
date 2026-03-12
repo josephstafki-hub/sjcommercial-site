@@ -11,7 +11,22 @@ export default function ContactSection() {
           </p>
 
           <div className="space-y-3 text-sm">
-            <div><strong>Phone:</strong> 612-361-6585</div>
+            <div>
+  <strong>Phone:</strong>{" "}
+  <a
+    href="tel:6123616585"
+    onClick={() => {
+      if (typeof window !== "undefined" && (window as any).gtag) {
+        (window as any).gtag("event", "phone_click", {
+          event_category: "engagement",
+          event_label: "Header Phone Number",
+        });
+      }
+    }}
+  >
+    612-361-6585
+  </a>
+</div>
             <div><strong>Email:</strong> commercial@sjcarpentryllc.com</div>
             <div><strong>Service Area:</strong> Minnesota</div>
           </div>
